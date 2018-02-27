@@ -5,19 +5,87 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Hello, world!</title>
+    <title>CrystalsCollector game</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  
+    
+  
+
+    
+    <h1>CrystalsCollector Game</h1>
+    
+    <br/> <br>
+
+    <ol id ="instruction">
+      <li>You will see a random number at the start of the game.</li>
+      <li>Below are four crystal images, you will get points to your total score for each click </li>
+      <li>If you match your total score to random number, you win. but if your total score goes above the random number, you loss. </li>
+      <li>Each crystal value is hidden until you click on it</li>
+      <li>Each time the game starts, the values of each crystal will change.</li>
+
+
+    </ol>
+
+<br><br>
+
+<div class="numberToPeer">
+  <h2>Number to Guess: 
+    <span id="random-Number"></span>
+    
+  </h2>
+</div>
+
+
+
+
+
+<div class="wins-losses">
+  
+<h2>Wins:
+  <span id="n-wins"></span>
+
+<br/>
+Losses:
+<span id="n-losses"></span>
+</h2>
+
+
+</div>
+
+
+<div id="valuables">
+
+  <img id="one-crystal" class="all-images" src="assets/images/crystal2.jpg" alt="first crystal">
+   <img id="two-crystal" class="all-images" src="assets/images/crystal1.jpg" alt="second crystal">
+   <img id="three-crystal" class="all-images" src="assets/images/crystal3.jpg" alt="third crystal">
+   <img id="four-crystal" class= "all-images" src="assets/images/crystal4.jpg" alt="last crystal">
+
+</div>
+
+
+
+<div class="yourTotal">
+  
+<h2>Your total score:
+
+  <span id="userFinalTotal"></span>
+  </h2>
+
+</div>
+
+
+
+    
+    <!-- jQuery first,  then Bootstrap JS, script link-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="assets/javascript/game.js"></script>

@@ -1,3 +1,29 @@
-h1{
-	color: red;
+.all-images{
+height: 200px;
+width: 200px;
+
+}
+
+h1 {float: left;
+	color: blue;
+margin-left: 30px;
+margin-top: 20px;
+font-weight: bold;
+
+}
+
+
+
+body{
+background-color: #FFF;
+
+}
+#instruction{
+
+margin-top: 20px;
+}
+
+h2{
+margin-left: 30px;
+font-weight: bold;
 }
